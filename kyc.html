@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KYC</title>
+</head>
+<body>
+
+    <center class="wrap">
+
+        <header class="headerwrap">
+
+            <div class="frstcontent">
+
+                <a href="index.html"> Chat </a>
+
+            </div>
+
+        </header>
+
+        <main class="mainwrap">
+
+            <div class="kyc">
+
+                <h1>KYC</h1>
+
+                <form method="post" action="https://script.google.com/a/macros/themvp.us/s/AKfycbxYufFCj7LZHmiGv1TA6LIeBvuLPMVvU0dkCkZ3fxUqpVa0qoXfvQR1T1kx3ciALnVi/exec" target ="_blank">
+
+                    <br>
+
+                    <label class="firstlabel" for="userid"> User ID </label>
+                    <input class="first" name="userid" type="text" placeholder="" required>
+
+
+
+
+                    <br>
+
+                    <label class="fifthlabel" for="employee"> Agente </label>
+                    <select class="fifth"name="employee" required id="employee" >
+                        <option value="ASH"> ASH </option>
+                        <option value="AGS"> AGS </option>
+                        <option value="CGCL"> CGCL </option>
+                        <option value="KEGO"> KEGO </option>
+                        <option value="NIGT"> NIGT </option>
+                    </select>
+
+                    
+
+                    <br>
+                    
+                    <label class="sixthlabel" for="date"> Fecha </label>
+                    <INPUT class="sixth" TYPE="date" name ="date" id="date" required></INPUT>
+                    
+                    <br>
+
+                    <input type="text" name="kyc" id="kyc" value="kyc" style="display:none"> 
+
+
+                    <input class="submit" type="submit" value="Guardar" id="submit" > 
+
+                    <br>
+                    <br>
+
+                    <input class="reset" type="reset" value="Clean">
+            
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </center>
+
+    
+    <script>
+        document.getElementById("date").min = new Date().toISOString().split("T")[0];
+    </script>
+    
+</body>
+</html>

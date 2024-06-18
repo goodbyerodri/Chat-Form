@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Google Sheet.css">
     <link rel="stylesheet" href="style.css">
-    <title>Chat Form</title>
+    <title>Chat</title>
 
 </head>
 
@@ -17,6 +17,8 @@
         <header class="headerwrap">
 
             <div class="frstcontent">
+
+                <a href="kyc.html"> KYC </a>
 
             </div>
 
@@ -54,7 +56,7 @@
                     <br>
 
                         <label class="thirdlabel" for="tag"> Tag  </label>
-                        <select class="third" name="tag" id="tag">
+                        <select class="third" name="tag" required id="tag" >
 
                             <optgroup label="0 - 99">
                                 <option value=""></option>
@@ -191,7 +193,7 @@
                     
                     <label class="frthlabel" for="outcome"> Resultado  </label>
 
-                    <select class="forth" name="outcome" id="outcome">
+                    <select class="forth" name="outcome" id="outcome" required>
                         <option value="Resuelto"> Resuelto </option>
                         <option value="No Resuelto"> No Resuelto </option>
                     </select>
@@ -201,7 +203,7 @@
                     <br>
 
                     <label class="fifthlabel" for="employee"> Agente </label>
-                    <select class="fifth"name="employee" id="employee">
+                    <select class="fifth"name="employee" id="employee" required>
                         <option value="ASH"> ASH </option>
                         <option value="AGS"> AGS </option>
                         <option value="CGCL"> CGCL </option>
@@ -217,7 +219,7 @@
                     <br>
                     
                     <label class="sixthlabel" for="date"> Fecha </label>
-                    <INPUT class="sixth" TYPE="date" name ="date" id="date"></INPUT>
+                    <INPUT class="sixth" TYPE="date" name ="date" id="date" required></INPUT>
                     
                     <br>
 
@@ -225,17 +227,16 @@
 
 
                     
-                    <input class="submit" type="submit" value="Submit" id="submit" > 
+                    <input class="submit" type="submit" value="Guardar" id="submit" > 
 
                     <br>
                     <br>
 
                     <input class="reset" type="reset" value="Clean">
 
-
                 </form>
 
-                
+
 
 
 
@@ -254,6 +255,8 @@
 
 
     <script src="Google Sheet.js"></script>
+    <script>document.getElementById("date").min = new Date().toISOString().split("T")[0];
+    </script>
 
 </body>
 

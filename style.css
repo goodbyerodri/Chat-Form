@@ -33,9 +33,23 @@ body {
 
 .headerwrap {
 
+    /* border: blue 2px solid; */
     border-bottom: .5rem ridge rgba(167, 7, 89, 0.8);
     padding: 0.5rem;
+    display: flex;
 }
+
+.logo {
+    /* border: red 5px solid; */
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+img {
+    width: 40%
+}
+
 
 
 .mainwrap {
@@ -113,11 +127,6 @@ body {
     color:white;
 }
 
-.headerwrap {
-    /* border: blue 5px solid; */
-    display: flex;
-
-}
 
 a {
     color: white;
@@ -126,13 +135,11 @@ a {
 
 .frstcontent {
 
-    border: pink 2px solid;
-    width: 10%;
-    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: .3rem;
+    width: 10%
 }
 
 .first  {
@@ -143,6 +150,13 @@ a {
     text-align: center;
     margin-top: .5rem;
 
+}
+
+.menubtn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: transparent;
 }
 
 .second  {
